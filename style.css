@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap");
+
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #0f141e;
+    background: #f1f1f1;
+}
+a:link {
+    color: rgb(17, 128, 240);
+}
+
+a:visited {
+    color: rgb(130, 227, 95);
+}
+a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+a:active {
+    color: brown;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* ------- ИНФОРМАЦИЯ О СЕБЕ ------- */
+
+.ava {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.info {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.info-text {
+    margin-left: 20px;
+}
+.info-text p {
+    font-style: italic;
+    font-weight: bold;
+    color: #86898f;
+}
+
+/* ------- ХОББИ И ОПЫТ РАБОТЫ ------- */
+
+.card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: solid #aaa 1px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+.hobby-card {
+    background-color: rgb(181, 241, 159);
+}
+.hobby-card ul li {
+    margin-bottom: 5px;
+    color: #444;
+}
+.hobby-card ul li:last-child {
+    margin-bottom: 0;
+}
+.experience-card {
+    background-color: rgb(236, 188, 124);
+}
+
+.tbl thead tr th {
+    width: 200px;
+}
+.tbl tbody tr td {
+    padding-left: 5px;
+    color: #444;
+}
+.tbl tbody tr:nth-child(odd) {
+    background-color: rgb(236, 210, 177);
+}
+.tbl thead {
+    background-color: rgb(235, 148, 33);
+}
+
+/* ------- ФОРМА ОБРАТНОЙ СВЯЗИ ------- */
+
+.form h2 {
+    text-align: center;
+}
+.form-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+.form-row .form-group {
+    width: 50%;
+}
+.form-group label {
+    display: block;
+    font-size: 14;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(181, 241, 159);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.btn:hover {
+    background-color: rgb(130, 227, 95);
+}
+
+/* ------- АДАПТИВ ------- */
+
+@media (max-width: 500px) {
+    .info {
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+    }
+    .form-row {
+        display: block;
+    }
+    .form-row .form-group {
+        width: 100%;
+    }
+}
